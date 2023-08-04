@@ -357,6 +357,8 @@ namespace Himani_parmar_8830561_Assignment4
                 Assert.That(value, Is.EqualTo("No Insurance for you!! Driver Age / Experience Not Correct"));
             }
         }
+
+
         [Test]
         public void insuranceQuote12InvalidPostalCode()
         {
@@ -389,6 +391,8 @@ namespace Himani_parmar_8830561_Assignment4
             driver.FindElement(By.Id("postalCode-error")).Click();
             Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
         }
+
+
         [Test]
         public void insuranceQuote13CityRequired()
         {
